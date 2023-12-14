@@ -1,0 +1,128 @@
+
+@media only screen and (max-width: 1024px) {
+    .menu-items {
+        flex-direction: column;
+        height: 0;
+        overflow: hidden;
+        transition: ease .5s;
+    }
+
+    .menu-items .menu-item {
+        padding: 9px;
+    }
+    
+    header .mobile-button {
+        content: "";
+        background: url(../img/burger.svg);
+        background-size: 100%;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: -25px;
+        top: -45px;
+    }
+    header .active .mobile-button {
+        content: "";
+        background: url(../img/times.svg);
+        background-size: 100%;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: -25px;
+        top: -45px;
+    }
+    .header-menu{
+        position: relative;
+    }
+    .active .menu-items {
+        height: 350px;
+        transition: ease .5s;
+    }
+    
+    .menu-items .main:after {
+        bottom: -10px;
+    }
+
+    .blog-details .info {
+        flex-direction: column;
+    }
+    .blog-content {
+        text-align: center;
+    }
+    .add-comments .comments-header {
+        flex-direction: column;
+    }
+    
+    .add-comments .comments-header .comment-buttons {
+        text-align: right   ;
+    }
+    .footer-bg {
+        background-image: unset;
+        background-color: #065b9e;
+    }
+
+    .projects-cards,.tabs-content,.footer-links,.footer-contact,.blogs,.projects-slider,.tabs div#content,.content-in,.content-area,.comment,.info-items,.blog-contents,.home.contact{
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .projects-cards .item,.tabs-content > span,.contact-maps,.footer-logo img,.blogs .content,.myteams .team-profile,.main-slider, .projects-info,.tabs div#content .item,.content-two img,.comment .comment-info,.banner img,.blog .content {
+        width: 100%;
+    }
+    .myteams .team-profile,.tabs div#content .item{
+        margin: 10px auto;
+    }
+    .content-area .content-ico,.content-area>div{
+        padding: 30px 0;
+    }
+    .content-two .title {
+        font-size: 12px;
+        text-align: center;
+    }
+    .content-two .content-ico {
+        bottom: -50px;
+    }
+    .comment{
+        margin:70px 0;
+    }
+    .banner-title,.banner-desc{
+        font-size: 10px;
+    }
+
+    .banner-btn button {
+        padding: 5px;
+        font-size: 9px;
+    }
+    .info-item.white {
+        position: unset;
+    }
+    .blog-contents {
+        padding: 0;
+        top: 0;
+    }
+    .home.blog .backgorund,.home.blog .backgorund img{
+        background: unset;
+        display: none;
+    }
+    .form-item {
+        padding-right: 0 !important;
+    }
+    .form-items {
+        flex-wrap: wrap;
+    }
+    .projects-content .main-area {
+        padding: 0;
+    }
+    .projects-cards .item {
+        margin: 10px 0px;
+    }
+    .projects .content-img img {
+        width: 100%;
+    }
+    .reserve-flex-fmobile {
+        flex-direction: column-reverse;
+    }
+
+}
